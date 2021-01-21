@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 13, 2021 at 07:29 AM
+-- Generation Time: Jan 18, 2021 at 02:52 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -81,18 +81,17 @@ CREATE TABLE `wishes` (
   `wish_image` varchar(255) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `priority_id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL
+  `user_id` int(11) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `price` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `wishes`
 --
 
-INSERT INTO `wishes` (`id`, `title`, `slug`, `body`, `wish_image`, `created_at`, `priority_id`, `user_id`) VALUES
-(49, 'c', 'c', '<p>c</p>\r\n', 'noimage.jpg', '2021-01-13 05:58:03', 1, 1),
-(51, 'xxx', 'xxx', '<p>xxx</p>\r\n', 'noimage.jpg', '2021-01-13 05:59:26', 1, 1),
-(52, 'xx', 'xx', '<p>xx</p>\r\n', 'noimage.jpg', '2021-01-13 06:04:18', 1, 1),
-(53, 'ttt', 'ttt', '<p>tttt</p>\r\n', 'noimage.jpg', '2021-01-13 06:17:08', 1, 1);
+INSERT INTO `wishes` (`id`, `title`, `slug`, `body`, `wish_image`, `created_at`, `priority_id`, `user_id`, `url`, `price`) VALUES
+(54, 'xx', 'xx', '<p>x</p>\r\n', 'noimage.jpg', '2021-01-18 13:32:43', 1, 1, 'xxxx', 'yyyy');
 
 --
 -- Indexes for dumped tables
@@ -136,7 +135,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `wishes`
 --
 ALTER TABLE `wishes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

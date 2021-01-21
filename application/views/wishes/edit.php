@@ -11,6 +11,14 @@
         <textarea id="editor1" class="form-control" name="body" placeholder="Add Body"><?php echo $wish['body']?></textarea>
     </div>
     <div class="form-group">
+        <label >URL</label>
+        <textarea id="editor1" class="form-control" id="url" name="url" placeholder="Add URL"></textarea>
+    </div>
+    <div class="form-group">
+        <label >Price</label>
+        <textarea id="editor1" class="form-control" id="price" name="price" placeholder="Add Price"></textarea>
+    </div>
+    <div class="form-group">
         <input type="radio" name="priority_id" value="1" <?php echo $wish['priority_id']=="1" ?"checked":""?>>
         <label>High Priority</label><br>
         <input type="radio" name="priority_id" value="2" <?php echo $wish['priority_id']=="2" ?"checked":""?>>

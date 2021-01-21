@@ -30,6 +30,8 @@
                 'priority_id'=>$this->input->post('priority_id'),
                 //'category_id' =>$this->input->post('category_id'),
                 'user_id'=>$this->session->userdata('user_id'),
+                'url'=>$this->input->post('url'),
+                'price'=>$this->input->post('price'),
                 'wish_image'=>$wish_image
             );
 
@@ -49,6 +51,8 @@
                 'slug'=>$slug,
                 'body'=>$this->input->post('body'),
                 'priority_id'=>$this->input->post('priority_id'),
+                'url'=>$this->input->post('url'),
+                'price'=>$this->input->post('price'),
                 //'category_id' =>$this->input->post('category_id')
             );
             $this->db->where('id',$this->input->post('id'));
